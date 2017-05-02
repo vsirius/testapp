@@ -1,0 +1,12 @@
+=== puma startup: 2017-05-01 20:12:47 +0000 ===
+=== puma startup: 2017-05-01 20:15:54 +0000 ===
+=== puma startup: 2017-05-01 20:23:01 +0000 ===
+2017-05-02 10:54:51 +0000: HTTP parse error, malformed request (127.0.0.1): #<Puma::HttpParserError: Invalid HTTP format, parsing fails.>
+2017-05-02 10:54:51 +0000: ENV: {"rack.version"=>[1, 3], "rack.errors"=>#<IO:/home/ubuntu/appname/shared/log/puma.stderr.log>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "SCRIPT_NAME"=>"", "QUERY_STRING"=>"", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"puma 3.8.2 Sassy Salamander", "GATEWAY_INTERFACE"=>"CGI/1.2", "REMOTE_ADDR"=>"127.0.0.1", "REQUEST_METHOD"=>"GET"}
+---
+=== puma startup: 2017-05-02 13:16:22 +0000 ===
+=== puma startup: 2017-05-02 16:41:23 +0000 ===
+=== puma startup: 2017-05-02 16:55:22 +0000 ===
+=== puma startup: 2017-05-02 18:07:14 +0000 ===
+=== puma startup: 2017-05-02 18:45:42 +0000 ===
+=== puma startup: 2017-05-02 18:52:53 +0000 ===
