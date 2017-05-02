@@ -52,3 +52,6 @@
 [8706] - Gracefully shutting down workers...
 [8706] === puma shutdown: 2017-05-02 18:53:01 +0000 ===
 [8706] - Goodbye!
+=== puma startup: 2017-05-02 19:48:39 +0000 ===
+[10220] * Starting control server on unix:///tmp/puma-status-1493754519511-10220
+[10220] - Worker 0 (pid: 10268) booted, phase: 0
