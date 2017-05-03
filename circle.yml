@@ -3,7 +3,6 @@ machine:
   ruby:
     version:
       2.4.0
-database:
 dependencies:
   pre:
     - gem install capistrano
