@@ -9,7 +9,7 @@ dependencies:
     - sudo apt-get -y install git-core 
     - gem install capistrano
     - git clone https://github.com/vsirius/capistrano.git
-    - ls 
+    - gem install bundler
 
 test:
   override:
@@ -17,4 +17,6 @@ test:
 
 deployment:
     commands:
+      - cd capistrano
+      - bundle install
       - bundle exec cap production deploy
