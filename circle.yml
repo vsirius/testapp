@@ -1,25 +1,8 @@
 machine:
-  # Version of ruby to use
   ruby:
-    version:
-      2.4.0
-dependencies:
-  pre:
-    - env
-    - gem install capistrano
-    - git clone https://github.com/vsirius/capistrano.git
-    - gem install bundler
-    #- cd capistrano
-    #- bundle install
-     # - PATH=$PATH:/home/ubuntu/.yarn/bin:/opt/circleci/nodejs/v4.2.6/bin:/opt/google-cloud-sdk/bin:/home/ubuntu/.local/bin:/opt/ghc/8.0.2/bin:/opt/cabal/1.24/bin:/opt/alex/3.1.7/bin:/opt/happy/1.19.5/bin:/home/ubuntu/.composer/vendor/bin:/opt/circleci/.phpenv/shims:/opt/circleci/.phpenv/bin:/opt/circleci/.rvm/gems/ruby-2.2.6/bin:/opt/circleci/.rvm/gems/ruby-2.2.6@global/bin:/opt/circleci/.rvm/rubies/ruby-2.2.6/bin:/home/ubuntu/.go_workspace/bin:/usr/local/go/bin:/opt/circleci/nodejs/v4.2.6/bin:/opt/circleci/.pyenv/shims:/opt/circleci/.pyenv/bin:/opt/google-cloud-sdk/bin:/usr/local/android-sdk-linux/platform-tools:/usr/local/android-sdk-linux/tools:/usr/local/apache-maven/bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/gradle-1.10/bin:/opt/circleci/.rvm/bin:/opt/circleci/.rvm/bin
-   # - bundler install
-
-test:
-  override:
-    - nosetests
-
+    version: 2.3.4
 deployment:
+  production:
+    branch: production
     commands:
-      - cd capistrano
-      - bundle install
       - bundle exec cap production deploy
