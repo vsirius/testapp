@@ -2,7 +2,7 @@ machine:
   # Version of ruby to use
   ruby:
     version:
-      2.4.0
+      2.4.1
 
 ependencies:
   pre:
@@ -11,7 +11,7 @@ ependencies:
     - gem install capistrano
     - git clone https://github.com/vsirius/capistrano.git
     - gem install bundler
-    - ruby -v
+    - ls
 
 test:
   override:
