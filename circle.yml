@@ -1,3 +1,9 @@
 test:
   override:
     - nosetests
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - bundle exec cap production deploy
