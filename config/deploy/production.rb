@@ -49,12 +49,12 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server "54.87.190.157",
+server "52.87.162.52",
    user: "deploy",
  roles: %w{web app},
    ssh_options: {
         user: "deploy", # overrides user setting above
-        keys: %w(/Users/sirius/.ssh/id.rsa.pub),
+        # keys: %w(/Users/sirius/.ssh/id.rsa),
      forward_agent: true,
      auth_methods: %w(publickey password)
      # password: "please use keys"
