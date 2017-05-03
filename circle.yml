@@ -4,7 +4,7 @@ machine:
     version:
       2.4.1
 
-ependencies:
+dependencies:
   pre:
     - sudo apt-get -y update
     - sudo apt-get -y install git-core 
