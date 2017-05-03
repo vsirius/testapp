@@ -1,9 +1,12 @@
 machine:
   ruby:
     version: 2.3.4
+database:
+  override:
+    - echo "Skipping DB section."
 test:
   override:
-      - nosetests
+      -  echo "Skipping test section."
 deployment:
   staging:
     branch: staging
