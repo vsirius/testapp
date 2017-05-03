@@ -54,7 +54,7 @@ server "52.87.162.52",
  roles: %w{web app},
    ssh_options: {
         user: "deploy", # overrides user setting above
-        # keys: %w(/Users/sirius/.ssh/id.rsa),
+        keys: %w(~/.ssh/id.rsa),
      forward_agent: true,
      auth_methods: %w(publickey password)
      # password: "please use keys"
