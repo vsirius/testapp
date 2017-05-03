@@ -1,6 +1,9 @@
 machine:
   ruby:
     version: 2.3.4
+test:
+  override:
+      - nosetests
 deployment:
   staging:
     branch: staging
