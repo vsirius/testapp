@@ -1,8 +1,8 @@
-#machine:
+machine:
   # Version of ruby to use
- # ruby:
-  #  version:
-   #   2.4.0
+  ruby:
+    version:
+      2.4.0
 
 dependencies:
   pre:
@@ -12,6 +12,8 @@ dependencies:
     - wget http://ftp.ruby-lang.org/pub/ruby/2.4/ruby-2.4.0.tar.gz
     - tar -xzvf ruby-2.4.0.tar.gz
     - cd ruby-2.4.0/
+    - chmod +x configure
+    - /bin/bash ./configure
     - sudo ./configure
     - make
     - sudo make install
