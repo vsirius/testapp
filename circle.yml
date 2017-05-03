@@ -6,6 +6,8 @@ machine:
 
 dependencies:
   pre:
+    - rvm get stable --auto-dotfiles
+    - rvm use ruby-2.2.6
     - sudo apt-get -y update
     - sudo apt-get -y install git-core 
     - gem install capistrano
