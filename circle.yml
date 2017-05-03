@@ -18,6 +18,7 @@ test:
 
 deployment:
     commands:
+      - rvm use ruby-2.2.6
       - cd capistrano
       - bundle install
       - bundle exec cap production deploy
