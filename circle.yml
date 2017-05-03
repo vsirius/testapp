@@ -6,6 +6,7 @@ machine:
 dependencies:
   pre:
     - sudo apt-get -y update
+    - sudo apt-get -y install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
     - sudo apt-get -y install git-core 
     - gem install capistrano
     - git clone https://github.com/vsirius/capistrano.git
