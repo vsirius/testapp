@@ -1,5 +1,6 @@
 machine:
-  services:
+dependencies:
+  pre:
     - build-essential
     - automake
     - bison
