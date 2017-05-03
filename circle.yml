@@ -2,7 +2,7 @@ machine:
   # Version of ruby to use
   ruby:
     version:
-      2.4.1
+      2.2.6
 
 dependencies:
   pre:
