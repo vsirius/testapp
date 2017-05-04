@@ -18937,3 +18937,19 @@ Tasks: TOP => environment
   INFO [653eedd4] Finished in 0.534 seconds with exit status 0 (successful).
   INFO [5bcec28b] Running /usr/bin/env mkdir -p /data/testapp/releases/20170504084014/config as deploy@52.87.162.52
  DEBUG [5bcec28b] Command: /usr/bin/env mkdir -p /data/testapp/releases/20170504084014/config
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 12:54:24 +0300 cap production deploy:puma
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 12:56:06 +0300 cap production puma
+  INFO ---------------------------------------------------------------------------
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 13:12:14 +0300 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a4794962] Running if test ! -d /data/testapp/current; then echo "Directory does not exist '/data/testapp/current'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [a4794962] Command: if test ! -d /data/testapp/current; then echo "Directory does not exist '/data/testapp/current'" 1>&2; false; fi
+ DEBUG [a4794962] Finished in 2.587 seconds with exit status 0 (successful).
+  INFO [f7b3ce47] Running /usr/bin/env bundle exec pumactl -S /data/testapp/shared/tmp/sockets/puma.state restart as deploy@52.87.162.52
+ DEBUG [f7b3ce47] Command: cd /data/testapp/current && /usr/bin/env bundle exec pumactl -S /data/testapp/shared/tmp/sockets/puma.state restart
+ DEBUG [f7b3ce47] 	Command restart sent success
+  INFO [f7b3ce47] Finished in 0.531 seconds with exit status 0 (successful).
