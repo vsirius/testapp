@@ -12,4 +12,7 @@ deployment:
     branch: master
     commands:
       - bundle exec cap production deploy
-      - cap production puma:restart
+  production:
+    branch: master
+    commands:
+       - cap production puma:restart
