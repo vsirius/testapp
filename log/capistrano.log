@@ -18963,3 +18963,18 @@ Tasks: TOP => environment
  DEBUG [9b01e46a] Command: cd /data/testapp/current && /usr/bin/env bundle exec pumactl -S /data/testapp/shared/tmp/sockets/puma.state restart
  DEBUG [9b01e46a] 	Command restart sent success
   INFO [9b01e46a] Finished in 0.603 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 13:25:48 +0300 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [58f8e453] Running if test ! -d /data/testapp/current; then echo "Directory does not exist '/data/testapp/current'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [58f8e453] Command: if test ! -d /data/testapp/current; then echo "Directory does not exist '/data/testapp/current'" 1>&2; false; fi
+ DEBUG [58f8e453] Finished in 2.059 seconds with exit status 0 (successful).
+  INFO [33d938ba] Running /usr/bin/env bundle exec pumactl -S /data/testapp/shared/tmp/sockets/puma.state restart as deploy@52.87.162.52
+ DEBUG [33d938ba] Command: cd /data/testapp/current && /usr/bin/env bundle exec pumactl -S /data/testapp/shared/tmp/sockets/puma.state restart
+ DEBUG [33d938ba] 	Command restart sent success
+  INFO [33d938ba] Finished in 0.593 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 13:25:56 +0300 cap production puma:restart
+  INFO ---------------------------------------------------------------------------
+ DEBUG [74122f60] Running if test ! -d /data/testapp/current; then echo "Directory does not exist '/data/testapp/current'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [74122f60] Command: if test ! -d /data/testapp/current; then echo "Directory does not exist '/data/testapp/current'" 1>&2; false; fi
