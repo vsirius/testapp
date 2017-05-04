@@ -8,10 +8,6 @@ test:
   override:
       -  echo "Skipping test section."
 deployment:
-  staging:
-    branch: staging
-    commands:
-      - bundle exec cap staging deploy
   production:
     branch: master
     commands:
