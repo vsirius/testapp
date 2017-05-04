@@ -8,8 +8,8 @@ end
 
 gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
-gem 'puma', '~> 3.8
-gem 'devise_token_auth', '~> 0.1.4''
+gem 'puma', '~> 3.8'
+gem 'devise_token_auth', '~> 0.1.4'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'rack-cors', '~> 0.4.1', require: 'rack/cors'

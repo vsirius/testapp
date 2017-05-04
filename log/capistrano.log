@@ -18863,3 +18863,77 @@ Tasks: TOP => environment
   INFO [b20026a6] Running /usr/bin/env echo "Branch master (at 09a4fda46de5201424c7876d172726fcc1520d02) deployed as release 20170503102642 by sirius" >> /data/testapp/revisions.log as deploy@54.87.190.157
  DEBUG [b20026a6] Command: cd /data/testapp/releases && /usr/bin/env echo "Branch master (at 09a4fda46de5201424c7876d172726fcc1520d02) deployed as release 20170503102642 by sirius" >> /data/testapp/revisions.log
   INFO [b20026a6] Finished in 0.262 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 11:40:07 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ad948ddf] Running /usr/bin/env mkdir -p /tmp as deploy@52.87.162.52
+ DEBUG [ad948ddf] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ad948ddf] Finished in 2.910 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-testapp-production-sirius.sh 0.0%
+  INFO Uploading /tmp/git-ssh-testapp-production-sirius.sh 100.0%
+  INFO [21069465] Running /usr/bin/env chmod 700 /tmp/git-ssh-testapp-production-sirius.sh as deploy@52.87.162.52
+ DEBUG [21069465] Command: /usr/bin/env chmod 700 /tmp/git-ssh-testapp-production-sirius.sh
+  INFO [21069465] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO [cdd10cb9] Running /usr/bin/env git ls-remote git@github.com:vsirius/testapp_2.git HEAD as deploy@52.87.162.52
+ DEBUG [cdd10cb9] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git ls-remote git@github.com:vsirius/testapp_2.git HEAD )
+ DEBUG [cdd10cb9] 	3ae4cf815800f41650a3616f95b1b73f81f51195	HEAD
+  INFO [cdd10cb9] Finished in 0.714 seconds with exit status 0 (successful).
+  INFO [68d7d3d1] Running /usr/bin/env mkdir -p /data/testapp/shared /data/testapp/releases as deploy@52.87.162.52
+ DEBUG [68d7d3d1] Command: /usr/bin/env mkdir -p /data/testapp/shared /data/testapp/releases
+  INFO [68d7d3d1] Finished in 0.277 seconds with exit status 0 (successful).
+  INFO [aec3a1e3] Running /usr/bin/env mkdir -p /data/testapp/shared/tmp/sockets /data/testapp/shared/log /data/testapp/shared/config/puma /data/testapp/shared/public/spree as deploy@52.87.162.52
+ DEBUG [aec3a1e3] Command: /usr/bin/env mkdir -p /data/testapp/shared/tmp/sockets /data/testapp/shared/log /data/testapp/shared/config/puma /data/testapp/shared/public/spree
+  INFO [aec3a1e3] Finished in 0.246 seconds with exit status 0 (successful).
+  INFO [40553576] Running /usr/bin/env mkdir -p /data/testapp/shared/config as deploy@52.87.162.52
+ DEBUG [40553576] Command: /usr/bin/env mkdir -p /data/testapp/shared/config
+  INFO [40553576] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [be491158] Running [ -f /data/testapp/shared/config/database.yml ] as deploy@52.87.162.52
+ DEBUG [be491158] Command: [ -f /data/testapp/shared/config/database.yml ]
+ DEBUG [be491158] Finished in 0.254 seconds with exit status 0 (successful).
+ DEBUG [6a6c774c] Running [ -f /data/testapp/current/REVISION ] as deploy@52.87.162.52
+ DEBUG [6a6c774c] Command: [ -f /data/testapp/current/REVISION ]
+ DEBUG [6a6c774c] Finished in 0.247 seconds with exit status 0 (successful).
+ DEBUG [71c6c64b] Running /usr/bin/env cat /data/testapp/current/REVISION 2>/dev/null as deploy@52.87.162.52
+ DEBUG [71c6c64b] Command: /usr/bin/env cat /data/testapp/current/REVISION 2>/dev/null
+ DEBUG [71c6c64b] 	57f7661399913a8f0cc6f9e53a951c8c4a2c1982
+ DEBUG [71c6c64b] Finished in 0.257 seconds with exit status 0 (successful).
+ DEBUG [fbc5eeee] Running [ -f /data/testapp/repo/HEAD ] as deploy@52.87.162.52
+ DEBUG [fbc5eeee] Command: [ -f /data/testapp/repo/HEAD ]
+ DEBUG [fbc5eeee] Finished in 0.248 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /data/testapp/repo
+ DEBUG [9b8dc1b1] Running if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [9b8dc1b1] Command: if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi
+ DEBUG [9b8dc1b1] Finished in 0.929 seconds with exit status 0 (successful).
+  INFO [f21c978b] Running /usr/bin/env git remote set-url origin git@github.com:vsirius/testapp_2.git as deploy@52.87.162.52
+ DEBUG [f21c978b] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git remote set-url origin git@github.com:vsirius/testapp_2.git )
+  INFO [f21c978b] Finished in 0.337 seconds with exit status 0 (successful).
+  INFO [dc10eea5] Running /usr/bin/env git remote update --prune as deploy@52.87.162.52
+ DEBUG [dc10eea5] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [dc10eea5] 	Fetching origin
+ DEBUG [dc10eea5] 	From github.com:vsirius/testapp_2
+ DEBUG [dc10eea5] 	   57f7661..3ae4cf8  master     -> master
+  INFO [dc10eea5] Finished in 0.832 seconds with exit status 0 (successful).
+ DEBUG [0c14328d] Running if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [0c14328d] Command: if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi
+ DEBUG [0c14328d] Finished in 0.246 seconds with exit status 0 (successful).
+  INFO [ffad05db] Running /usr/bin/env mkdir -p /data/testapp/releases/20170504084014 as deploy@52.87.162.52
+ DEBUG [ffad05db] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env mkdir -p /data/testapp/releases/20170504084014 )
+  INFO [ffad05db] Finished in 0.247 seconds with exit status 0 (successful).
+  INFO [a96947c2] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/testapp/releases/20170504084014 as deploy@52.87.162.52
+ DEBUG [a96947c2] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/testapp/releases/20170504084014 )
+  INFO [a96947c2] Finished in 0.324 seconds with exit status 0 (successful).
+ DEBUG [70e5839d] Running if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [70e5839d] Command: if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi
+ DEBUG [70e5839d] Finished in 0.251 seconds with exit status 0 (successful).
+ DEBUG [9a0bd3f3] Running /usr/bin/env git rev-list --max-count=1 master as deploy@52.87.162.52
+ DEBUG [9a0bd3f3] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9a0bd3f3] 	3ae4cf815800f41650a3616f95b1b73f81f51195
+ DEBUG [9a0bd3f3] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [a43c6cf1] Running if test ! -d /data/testapp/releases/20170504084014; then echo "Directory does not exist '/data/testapp/releases/20170504084014'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [a43c6cf1] Command: if test ! -d /data/testapp/releases/20170504084014; then echo "Directory does not exist '/data/testapp/releases/20170504084014'" 1>&2; false; fi
+ DEBUG [a43c6cf1] Finished in 0.252 seconds with exit status 0 (successful).
+  INFO [653eedd4] Running /usr/bin/env echo "3ae4cf815800f41650a3616f95b1b73f81f51195" >> REVISION as deploy@52.87.162.52
+ DEBUG [653eedd4] Command: cd /data/testapp/releases/20170504084014 && /usr/bin/env echo "3ae4cf815800f41650a3616f95b1b73f81f51195" >> REVISION
+  INFO [653eedd4] Finished in 0.534 seconds with exit status 0 (successful).
+  INFO [5bcec28b] Running /usr/bin/env mkdir -p /data/testapp/releases/20170504084014/config as deploy@52.87.162.52
+ DEBUG [5bcec28b] Command: /usr/bin/env mkdir -p /data/testapp/releases/20170504084014/config
