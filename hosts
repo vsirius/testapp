@@ -1,1 +1,1 @@
-107.21.70.194 ansible_ssh_port=22 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/Users/sirius/Downloads/linux.pem
+54.93.228.152 ansible_ssh_port=22 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=/Users/sirius/Downloads/linux.pem
