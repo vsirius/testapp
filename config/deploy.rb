@@ -1,8 +1,5 @@
 set :application, 'testapp'
-#set :repo_url, 'git@github.com:vsirius/testapp.git'
-set :scm, :none
-set :repository, "."
-set :deploy_via, :copy
+set :repo_url, 'git@github.com:vsirius/testapp.git'
 set :deploy_to, '/data/testapp'
 set :log_level, :debug
 set :linked_files, %w{config/database.yml}
